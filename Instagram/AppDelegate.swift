@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,8 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "U4kcrYvmSxdLCwYldKW0mkBV92xa3X44t2X7SUic"
+                    $0.clientKey = "zC3wbwNPJnrrpUsDid9yfy7tAaKW1ignwcjzxY2E"
+                    $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
         return true
+//        Parse.initialize(
+//            with: ParseClientConfiguration(block:
+//                { (configuration: ParseMutableClientConfiguration) -> Void in
+//                    configuration.applicationId = "Instagram"
+//                    configuration.server = "https://whispering-stream-51370.herokuapp.com/parse"
+//                })
+//            )
+//        return true
     }
 
     // MARK: UISceneSession Lifecycle
