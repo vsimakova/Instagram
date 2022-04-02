@@ -21,7 +21,7 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![ezgif com-gif-maker-5](https://user-images.githubusercontent.com/67300899/161370986-e1a3bed9-cf9a-4978-a27a-4c2159c5e04b.gif)
+![ezgif com-gif-maker-6](https://user-images.githubusercontent.com/67300899/161371084-8773b573-56a8-4aba-95bc-a7c5209f03f3.gif)
 
 
 # Instagram - Part I
